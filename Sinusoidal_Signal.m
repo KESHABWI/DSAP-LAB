@@ -1,0 +1,16 @@
+n = -10:0.2:10;
+f=0.1;
+A=1;
+y = A*sin(2*pi*f*n);
+subplot(2,1,1);
+stem(n,y,'r');
+xlabel('time');
+ylabel('Amplitude');
+title('Sinusoidal Signal KANO77BCT044');
+hold on;
+z = A*cos(2*pi*f*n);
+subplot(2,1,2);
+stem(n,y,'b');
+xlabel('time');
+ylabel('Amplitude');
+title('cosine Signal KANO77BCT044');
